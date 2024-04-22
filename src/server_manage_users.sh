@@ -16,7 +16,8 @@ done
 for i in $home_path*/
 do
     if [[ "$i" != "$home_path""donibane/" ]]; then
-        NUSER=`echo $i | cut -d "/" -f 5`
-        chown $NUSER:$NUSER -R $i
-fi
+        echo "i=" $i; NUSER=`echo $i | cut -d "/" -f 5`
+        echo $NUSER; groups $NUSER; NGROUP=`groups $NUSER | cut -d : -f 2 | cut -d " " -f 2`
+        echo chown $NUSER:$NGROUP -R $i
+    fi
 done
