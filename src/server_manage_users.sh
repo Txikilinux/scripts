@@ -3,6 +3,7 @@
 home_path="/skole/tjener/home0/"
 permissions="2770"
 
+
 for i in $home_path*/
 do
     if [[ "$i" != "$home_path""donibane/" ]]; then
@@ -13,6 +14,7 @@ do
         # echo "echo: $home_path""donibane/"
     fi
 done
+
 
 for i in $home_path*/
 do
