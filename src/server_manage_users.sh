@@ -1,6 +1,7 @@
  #!/bin/bash
- home_path="/skole/tjener/home0/"
- permissions="2770"
+
+home_path="/skole/tjener/home0/"
+permissions="2770"
 
 for i in $home_path*/
 do
